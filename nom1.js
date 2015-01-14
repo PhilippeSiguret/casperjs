@@ -32,4 +32,11 @@ casper.then(function() {
     }
 });
 
+
+casper.then(function() {
+       this.getElementInfo('.given-name');
+       this.echo('.given-name')
+});
+
+
 casper.run();
