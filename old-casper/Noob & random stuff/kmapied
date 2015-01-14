@@ -1,0 +1,16 @@
+var casper = require('casper').create({
+  verbose: true,
+
+});
+
+var km = [];
+
+casper.start(function(){
+	km = [[1]];
+});
+
+casper.then(function(){
+	km = km.concat([2]);
+})
+
+casper.run();
